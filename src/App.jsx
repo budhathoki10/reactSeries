@@ -1,35 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Props from './Props/Props'
 
 function App() {
   const [count, setCount] = useState(0)
 
+  const clickbtn = () => {
+    alert("View profile clicked!");
+  }
+
+  const hobbies = ["play", "read", "refocus"];
+
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Props name="Kushal" age={20} salary={300000} onClick={clickbtn} hobbiess={hobbies} />
+      <Props name="Ram" age={15} salary={100000} onClick={clickbtn} hobbiess={hobbies} />
+      <Props name="Shyam" age={23} salary={1000} onClick={clickbtn} hobbiess={hobbies} />
+      <Props name="Hari" age={22} salary={15000} onClick={clickbtn} hobbiess={hobbies} />
     </>
   )
 }
 
-export default App
+export default App;
