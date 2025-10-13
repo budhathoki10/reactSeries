@@ -25,3 +25,21 @@ padding: 12px;
 .Props h1{
   margin-left: 20%;
 }
+
+/* .propsProject{
+  width: 400px;
+  background-color: #9c9494;
+  border: 1px solid green;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.propsProject h1{
+  margin-left: 45px;
+  color: white;
+}
+.propsProject img{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+} */

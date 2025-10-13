@@ -1,24 +1,18 @@
 import { useState } from 'react'
 import './App.css'
-import Props from './Props/Props'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  const clickbtn = () => {
-    alert("View profile clicked!");
-  }
-
-  const hobbies = ["play", "read", "refocus"];
+import Propsproj from './Props/Propsproj';
+import miami from './assets/a72307c59c9a113a19493a01b97a744b.jpg'
+import barca from './assets/FC_Barcelona_(crest).svg.png'
+function App(props) {
 
   return (
     <>
-      <Props name="Kushal" age={20} salary={300000} onClick={clickbtn} hobbiess={hobbies} />
-      <Props name="Ram" age={15} salary={100000} onClick={clickbtn} hobbiess={hobbies} />
-      <Props name="Shyam" age={23} salary={1000} onClick={clickbtn} hobbiess={hobbies} />
-      <Props name="Hari" age={22} salary={15000} onClick={clickbtn} hobbiess={hobbies} />
+<Propsproj name="Lionel Messi" club="Inter Miami" image={miami}></Propsproj>
+<Propsproj name="lamine Yamal" club="Fc Barcelona" image={barca}></Propsproj>
+
     </>
   )
-}
+
+  }
 
 export default App;

@@ -1,0 +1,9 @@
+.btns{
+  background-color: green;
+}
+.inputtyp{
+  padding: 25px;
+  border-radius: 12px;
+  border-color: blue;
+  display: block;
+}
