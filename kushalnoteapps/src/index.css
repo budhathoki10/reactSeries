@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+/* Form Section */
+.divide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid green;
+  width: 350px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.divide h1 {
+  color: rgb(56, 99, 173);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.fillform,
+.fillformdetails {
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 10px 15px;
+  color: #333;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.btns {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: #555;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btns:hover {
+  background-color: #333;
+}
+
+/* Notes Section */
+.diva {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid green;
+  width: 750px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.h1q {
+  margin-bottom: 10px;
+  color: rgb(56, 99, 173);
+  font-weight: bold;
+}
+
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.note {
+  background-color: #5cae94;
+  color: white;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.note h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.note p {
+  font-size: 0.9rem;
+}
+
+.deleteBtn {
+  background-color: red;
+  border: none;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.deleteBtn:hover {
+  background-color: darkred;
+}
