@@ -41,7 +41,7 @@ getdata()
     setindex(index-1)
     setUsedata([])
   }}>pre</button>
-  <h3>{index}</h3>
+  <h3>Page: {index}</h3>
   <button className='buttons' onClick={()=>{setindex(index+1)
     setUsedata([])
   }}>next</button>
